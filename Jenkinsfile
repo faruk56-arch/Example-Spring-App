@@ -32,6 +32,10 @@ pipeline {
                 sh 'docker logout'
             }
         }
+        stage('Deploy') {
+            agent any
+            steps {
+                echo 'Deploying'
     }
     
 }
