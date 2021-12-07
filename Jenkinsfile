@@ -33,7 +33,7 @@ pipeline {
             }
         }
         stage('Deploy') {
-            agent any
+            agent 
             steps {
                 echo 'Deploying'
     }
@@ -44,4 +44,4 @@ def getCommitHash() {
         return sh(script: 'git rev-parse --short HEAD', returnStdout: true)
     }
 }
-    }
+    
