@@ -32,10 +32,7 @@ pipeline {
                 sh 'docker logout'
             }
         }
-        stage('Deploy') {
-            agent 
-            steps {
-                echo 'Deploying'
+        
     }
     
 }
@@ -44,4 +41,3 @@ def getCommitHash() {
         return sh(script: 'git rev-parse --short HEAD', returnStdout: true)
     }
 }
-    
