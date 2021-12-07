@@ -1,8 +1,8 @@
 pipeline {
     agent none
     environment {
-        DOCKER_HUB_USERNAME = credentials('docker_username')
-        DOCKER_HUB_PASSWORD = credentials('docker_hub_token')
+        DOCKER_HUB_USERNAME = credentials('docker-userneme')
+        DOCKER_HUB_PASSWORD = credentials('dockerUp-token')
         CURRENT_COMMIT = getCommitHash()
     }
 
