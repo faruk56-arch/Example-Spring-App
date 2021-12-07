@@ -1,5 +1,5 @@
 pipeline {
-    agent
+    agent none
     environment {
         DOCKER_HUB_USERNAME = credentials('docker_username')
         DOCKER_HUB_PASSWORD = credentials('docker_hub_token')
