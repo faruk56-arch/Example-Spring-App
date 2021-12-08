@@ -8,7 +8,7 @@ pipeline {
 
     stages {
         stage('Unit tests') {
-            agent {
+            agent any {
                 docker {
                     image 'openjdk:17'
                     args '-v $HOME/.m2:/root/.m2'
