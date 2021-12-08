@@ -1,14 +1,14 @@
 pipeline {
     agent none
     environment {
-        DOCKER_HUB_USERNAME = credentials('jenkin_username	')
-        DOCKER_HUB_PASSWORD = credentials('jenkins_password	')
+        DOCKER_HUB_USERNAME = credentials('jenkin_username')
+        DOCKER_HUB_PASSWORD = credentials('jenkins_password')
         CURRENT_COMMIT = getCommitHash()
     }
 
     stages {
         stage('Unit tests') {
-            agent any {
+            agent  {
                 docker {
                     image 'openjdk:17'
                     args '-v $HOME/.m2:/root/.m2'
