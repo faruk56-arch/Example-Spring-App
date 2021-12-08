@@ -3,7 +3,7 @@ pipeline {
     environment {
         DOCKER_HUB_USERNAME = credentials('jenkin_username')
         DOCKER_HUB_PASSWORD = credentials('jenkins_password	')
-        CURRENT_COMMIT = ""
+        CURRENT_COMMIT = "master"
     }
 
     stages {
