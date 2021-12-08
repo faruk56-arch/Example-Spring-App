@@ -1,8 +1,8 @@
 pipeline {
     agent none
     environment {
-        jenkin_username = credentials('jenkin_username')
-        jenkins_password = credentials('jenkins_password	')
+        DOCKER_HUB_USERNAME = credentials('jenkin_username')
+        DOCKER_HUB_PASSWORD = credentials('jenkins_password	')
         CURRENT_COMMIT = getCommitHash()
     }
 
