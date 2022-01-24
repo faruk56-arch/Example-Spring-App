@@ -1,0 +1,7 @@
+organization=epsii
+projectKey=jenkin-projects
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.26268
+dashboardUrl=https://sonarcloud.io/dashboard?id=jenkin-projects
+ceTaskId=AX6NDbOXEtnFPnYRck7O
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX6NDbOXEtnFPnYRck7O
